@@ -5,7 +5,7 @@ checkoutLocation: "go/src/github.com/juandemanjon/go-kubernetes"
 workspaceLocation: "go/src/github.com/juandemanjon/go-kubernetes"
 tasks:
   - init: >
-      cd go-kubernetes ; build -o app
+      cd go-kubernetes ; go build -o app
     command: >
       ./app
 github:
