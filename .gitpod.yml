@@ -1,0 +1,16 @@
+ports:
+  - port: 8080
+    onOpen: open-preview
+checkoutLocation: "go/src/github.com/juandemanjon/go-kubernetes"
+workspaceLocation: "go/src/github.com/juandemanjon/go-kubernetes"
+tasks:
+  - init: >
+      cd go-kubernetes ; build -o app
+    command: >
+      ./app
+github:
+    prebuilds:
+        pullRequestsFromForks: true
+vscode:
+  extensions:
+    - golang.go
