@@ -7,7 +7,7 @@ tasks:
   - init: >
       cd go-kubernetes ; go build -o app
     command: >
-      ./app
+      cd go-kubernetes ; ./app
 github:
     prebuilds:
         pullRequestsFromForks: true
